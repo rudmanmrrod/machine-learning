@@ -64,7 +64,6 @@ Theta2_grad = zeros(size(Theta2));
 % Part 1: Feedforward the neural network and return the cost in the
 %         variable J.
 %Funcion sin regularizar
-%X = [ones(m,1) X];
 Y = [y == (1:num_labels)];
 h1 = sigmoid([ones(m,1) X]*Theta1');
 h = sigmoid([ones(m,1) h1]*Theta2');
